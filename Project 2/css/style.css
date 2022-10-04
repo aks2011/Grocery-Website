@@ -1,0 +1,282 @@
+/*CSS reset*/
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Arvo', serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*font-family: 'Abril Fatface', cursive;
+font-family: 'Arvo', serif; */
+
+/*CSS Variables*/
+:root{
+
+}
+
+/*Navigation bar*/
+#navbar{
+   display: flex;
+   position: sticky;
+   align-items: center; 
+   height: 70px;
+   top: 0px;
+}
+
+#navbar::before{
+    content:"";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .2;
+}
+
+/*Navbar logo and image*/
+#logo{
+    margin: 4px 6px;
+}
+
+#logo img{
+    height: 105px;
+    margin: 4px 6px;
+}
+
+/*Navigation bar list styling*/
+
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 30px;
+    text-decoration: none;
+    border-radius: 15px;
+    font-size: 25px;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/*Home Section*/
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 50px;
+    height: 600px;
+}
+
+#home::before{
+    content:"";
+    background-color: black;
+    background: url('../img/bg.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: px;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    opacity: .95;
+}
+
+#home h1{
+    color:white;
+    text-align: center;
+    font-style: font-family: 'Abril Fatface', cursive;
+    font-size: 60px
+}
+
+#home p{
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 20px;
+    font-size: 25px;
+}
+
+#home .btn{
+    background-color: crimson;
+    border: 2px solid black;
+    color: white;
+    padding: 6px 15px;
+    margin: 20px;
+    font-weight: 500;
+    font-size: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+    top: 100px;
+    z-index: -1;
+}
+
+#home .btn:hover{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+/*services section*/
+#services-container{
+    
+}
+
+/*#services-container::before{
+    content: "";
+    position: absolute;
+    background-color: rgb(183, 200, 240);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .5;
+}*/
+
+#services-container h1{
+    margin-top: 300px
+}
+
+#services{
+    display: flex;
+    margin:10px;
+}
+
+#services .box{
+    border: 2px solid black;
+    margin: 20px 6px;
+    padding: 25px;
+    border-radius: 20px;
+    background-color: rgb(231, 230, 240);
+}
+
+#services .box img{
+    height: 100px;
+    margin: auto;
+    display: block;
+}
+
+#services .box h2{
+    margin: 15px;
+    color: crimson;
+    text-shadow: 1px 1px 1px black;
+}
+
+#services .box p{
+    color: black;
+    text-align: justify;
+}
+
+/*Client Section*/
+#client-section{
+    height: 300px;
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background-color: white;
+    background: url(../img/cb.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 31.2%;
+    z-index: -1;
+    opacity: .6;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item{
+    padding: 60px;
+}
+
+.client-item img{
+    height: 60px;
+}
+
+/*Contact Section*/
+#contact{
+    position: relative;
+    top: 2px;
+}
+
+#contact::before{
+    content: "";
+    background-color: black;
+    background: url(../img/cont.jpg)no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%; 
+    z-index: -1;
+    opacity: .6;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.3rem;
+    border-radius: 10px;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+#contact-box form{
+    width: 35%;
+}
+
+#contact-box label{
+    font-size: 1.1rem;
+}
+
+/*Footer*/
+footer{
+    background: black;
+    color: white;
+    position: relative;
+    height: 10px;
+    padding: 9px 10px;
+    font-size: 12px;
+}
+
+/*Utility Classes*/
+.h-primary{
+    font-style: font-family: 'Abril Fatface', cursive;
+    font-size: 3rem;
+    padding: 5px;
+}
+
+.h-secondary{
+    font-size: 1.8rem;
+    padding: 15px;
+}
+
+.center{
+    text-align: center;
+}
